@@ -1,0 +1,44 @@
+.color__picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  .color__grid {
+    display: grid; //grid rækker
+    grid-template-columns: repeat(5, 60px); //5 vandrette rækker
+    gap: 6px;
+
+    .color__option {
+      width: 50px;
+      height: 50px;
+      border: 2px solid white;
+      margin: 2px;
+
+      &:hover {
+        //border bliver vist ved hover af mus
+        border: 2px solid black;
+      }
+    }
+  }
+
+  .selected__color {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+  }
+
+  .text__selected__color {
+    margin-top: 30px;
+    color: white;
+  }
+
+  .close__btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: yellow;
+    color: black;
+  }
+}
